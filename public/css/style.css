@@ -1,0 +1,248 @@
+/********************
+THÈME DE COULEUR
+********************/
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2b112e;
+  background-image: url(img/bg.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: Roboto;
+}
+body h1 {
+  color: #2ad1a8;
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+}
+body h1#accueil {
+  font-size: 800%;
+}
+body a {
+  color: #fff;
+  text-decoration: none;
+}
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px;
+  padding-bottom: 0;
+  background-color: #31826e;
+}
+body header h1 {
+  color: #fff;
+  font-size: 35px;
+}
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body header nav ul li {
+  padding: 5px 0px;
+  margin-right: 30px;
+}
+body header nav ul li a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body header nav ul li a:hover {
+  color: #ffd861;
+}
+body div#adresse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+body div#adresse h1 {
+  margin-top: 30px;
+}
+body div#adresse a {
+  cursor: pointer;
+}
+body div#adresse table {
+  background-color: #2b112e;
+  border-collapse: collapse;
+  margin: 30px;
+}
+body div#adresse table tr:nth-child(odd) {
+  background-color: #31826e;
+}
+body div#adresse table tr:nth-child(odd) th:focus,
+body div#adresse table tr:nth-child(odd) td:focus {
+  background-color: #2ad1a8;
+}
+body div#adresse table tr:nth-child(even) th:focus,
+body div#adresse table tr:nth-child(even) td:focus {
+  background-color: #7c2e85;
+}
+body div#adresse table tr th,
+body div#adresse table tr td {
+  border: 2px solid #31826e;
+  padding: 10px;
+  text-align: center;
+}
+body div#adresse table tr th a {
+  color: #ffd861;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+body div#adresse table tr td a {
+  text-decoration: none;
+  color: #ffd861;
+}
+body div#adresse nav#gererAdd {
+  width: 60%;
+}
+body div#adresse nav#gererAdd ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body div#adresse nav#gererAdd ul li {
+  list-style-type: none;
+  background-color: #2b112e;
+  padding: 20px 70px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body div#adresse nav#gererAdd ul li:hover {
+  background-color: #7c2e85;
+}
+body div#adresse nav#gererAdd ul li a {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+body div#adresse form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 30px;
+  padding: 15px;
+  background-color: #2b112e;
+}
+body div#adresse form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+body div#adresse form label input {
+  margin-left: 30px;
+}
+body div#adresse form input[type='text'] {
+  padding: 5px;
+  color: #2b112e;
+}
+body div#adresse form input[type='submit'] {
+  background-color: #2ad1a8;
+  border: 2px outset #31826e;
+  padding: 10px;
+  font-family: Open Sans;
+  font-size: 12px;
+  margin: 10px auto;
+  color: #ffd861;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+body div#adresse form input[type='submit']:hover {
+  background-color: #31826e;
+  color: #ffd861;
+  border: 3px inset #31826e;
+  margin: 9px auto;
+}
+body div#adresse form input:focus {
+  border: 2px solid #ffd861;
+  outline: none;
+}
+body div#adresse form#formModif {
+  padding: 0;
+  margin: 0;
+}
+body footer {
+  background-color: #31826e;
+  text-align: center;
+}
+@media screen and (min-width: 625px) {
+  body header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header nav {
+    margin: 0;
+    margin-top: 20px;
+  }
+  body header nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  body header nav ul li {
+    margin: 0;
+    padding: 5px 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  body header nav {
+    margin-top: 0;
+  }
+}
