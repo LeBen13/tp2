@@ -1,0 +1,42 @@
+<div id="adresse">
+    <% if(membres.length != 0) { %>
+        <table class="tableau">
+            <% let noLigne = 0 %>
+                <% if(typeof ordre_url == 'undefined') {ordre_url = 'asc'} %>
+                    <% for(element of membres){ %>
+                        <% if (noLigne==0){ %>
+                            <tr>
+                                <% noLigne++ %>
+                                    <th>_id</th>
+                                    <th>prenom</th>
+                                    <th>nom</th>
+                                    <th>telephone</th>
+                                    <th>courriel</th>
+                            </tr>
+                            <% } %>
+                                <% } %>
+
+                                    <% for (elm of membres) {%>
+                                        <tr>
+                                            <td>
+                                                <%= elm._id %>
+                                            </td>
+                                            <th>
+                                                <%= elm.prenom %>
+                                            </th>
+                                            <th>
+                                                <%= elm.nom %>
+                                            </th>
+                                            <td>
+                                                <%= elm.telephone %>
+                                            </td>
+                                            <td>
+                                                <%= elm.courriel %>
+                                            </td>
+                                        </tr>
+                                        <% } %>
+        </table>
+        <% } else { %>
+            <h2>Aucun résultat n'a été trouvé.</h2>
+            <% } %>
+</div>

@@ -1,0 +1,75 @@
+<div id="adresse">
+	<h1><%= __('membres') %></h1>
+	<% if(membres.length != 0) { %>
+		<form action="/rechercher" method="POST" name="frmRecherche">
+			<input type="text" name="recherche">
+			<input type="submit" value="<%= __('rechercher') %>">
+		</form>
+		<table class="tableau">
+			<% let noLigne = 0 %>
+			<% if(typeof ordre_url == 'undefined') {ordre_url = 'asc'} %>
+				<% for(element of membres){ %>
+					<% if (noLigne==0){ %>
+						<tr>
+							<% noLigne++ %>
+							<th><a href=/trier/_id/<%= ordre_url %> >_id</a></th>
+							<th><a href=/trier/prenom/<%= ordre_url %> ><%= __('prenom') %></a></th>
+							<th><a href=/trier/nom/<%= ordre_url %> ><%= __('nom') %></a></th>
+							<th><a href=/trier/telephone/<%= ordre_url %> ><%= __('telephone') %></a></th>
+							<th><a href=/trier/courriel/<%= ordre_url %> ><%= __('courriel') %></a></th>
+							<th></th>
+							<th>
+								<a id="ajouter" > <%= __('ajouter') %> </a>
+							</th>
+						</tr>
+					<% } %>
+				<% } %>
+					
+				<% for (elm of membres) {%>
+					<tr>
+						<td><a href="/afficher/<%= elm._id %>"><%= elm._id %></a></td>
+						<th contenteditable><%= elm.prenom %></th>
+						<th contenteditable><%= elm.nom %></th>
+						<td contenteditable><%= elm.telephone %></td>
+						<td contenteditable><%= elm.courriel %></td>
+						<td><a class="modifier"> <%= __('modifier') %></a></td>
+						<td><a class="supprimer"> <%= __('supprimer') %> </a></td>
+					</tr>
+				<% } %>
+		</table>
+	<% } else { %>
+		<h2><% __('aucunMembre') %></h2>
+	<% } %>
+
+	<nav id="gererAdd">
+		<ul>
+			<li><a href="http://localhost:8081/peuplement"><%= __('peuplement') %></a></li>
+			<li><a href="http://localhost:8081/vider"><%= __('vider') %></a></li>
+		</ul>
+	</nav>
+
+	<h1><%= __('inscription') %></h1>
+	<form id="formAdd" name="formAjout" action="/ajouter_ajax" method="POST">
+		<label>
+			<%= __('prenom') %>:
+			<input type="text" name="prenom">
+		</label>
+		<label>
+			<%= __('nom') %>:
+			<input type="text" name="nom">
+		</label>
+		<label>
+			<%= __('telephone') %>:
+			<input type="text" name="telephone">
+		</label>
+		<label>
+			<%= __('courriel') %>:
+			<input type="text" name="courriel">
+		</label>
+		<input type="button" value="<%= __('envoyer') %>" id="btnAddForm">
+	</form>
+</div>
+
+<script type="text/javascript" src="js/ajax_ajouter.js"></script>
+<script type="text/javascript" src="js/ajax_modifier.js"></script>
+<script type="text/javascript" src="js/ajax_supprimer.js"></script>
