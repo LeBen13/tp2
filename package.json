@@ -1,0 +1,24 @@
+{
+    "name": "Marinier_tp1",
+    "version": "1.0.0",
+    "description": "Tp1 cours de veille",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+    "express",
+    "ejs",
+    "MongoDB"
+  ],
+    "author": "Benjamin Marinier",
+    "license": "ISC",
+    "dependencies": {
+        "cookie-parser": "^1.4.3",
+        "ejs": "^2.5.7",
+        "express": "^4.16.2",
+        "i18n": "^0.8.3",
+        "mongodb": "^3.0.2",
+        "socket.io": "^2.0.4"
+    }
+}

@@ -1,0 +1,19 @@
+{
+	"accueil": "Home",
+	"adresses": "Address",
+	"peuplement": "Populate",
+	"vider": "Empty",
+	"membres": "Members",
+	"inscription": "Register",
+	"carnet": "Address book",
+	"prenom": "First name",
+	"nom": "Last name",
+	"telephone": "Phone number",
+	"courriel": "E-mail",
+	"ajouter": "Add",
+	"modifier": "Register (modify)",
+	"supprimer": "Delete",
+	"rechercher": "Find",
+	"envoyer": "Submit",
+	"aucunMembre": "There are no members registered."
+}

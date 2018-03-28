@@ -1,0 +1,19 @@
+{
+	"accueil": "Accueil",
+	"adresses": "Adresse",
+	"peuplement": "Peupler",
+	"vider": "Vider",
+	"membres": "Membres",
+	"inscription": "Inscription",
+	"carnet": "Carnet d'adresses",
+	"prenom": "Prénom",
+	"nom": "Nom",
+	"telephone": "Téléphone",
+	"courriel": "Courriel",
+	"ajouter": "Ajouter",
+	"modifier": "Enregistrer (modifier)",
+	"supprimer": "Supprimer",
+	"rechercher": "Rechercher",
+	"envoyer": "Envoyer",
+	"aucunMembre": "Aucun membre n'est enregistré."
+}
